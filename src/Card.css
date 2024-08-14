@@ -1,0 +1,90 @@
+/* src/Card.css */
+.card {
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    position: relative; /* Ensure card content is properly positioned */
+    border-radius: 15px;
+  }
+  
+  .card-content {
+    padding: 10px;
+    height: 100%; /* Ensure content takes up full height */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .resizable-box {
+    position: absolute; /* Make sure the resizable box does not add extra space */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+
+  .react-resizable-handle-se {
+    bottom: 7px;
+    right: 7px;
+    cursor: se-resize;
+}
+  
+  .delete-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: transparent;
+    border: none;
+    color: #ff4d4d; /* Red color for the cross */
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .show-more-button {
+    position: absolute;
+    bottom: 10px; /* Adjust this value to position it vertically */
+    right: 12px; /* Adjust this value to position it horizontally beside the resizer */
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: white; /* Blue background */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .show-more-button:hover {
+    background-color: grey; /* Darker blue on hover */
+  }
+  
+  /* Modal styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow: auto;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
